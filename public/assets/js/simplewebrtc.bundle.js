@@ -12467,7 +12467,7 @@ function Manager(uri, opts){
   }
   opts = opts || {};
 
-  opts.path = opts.path || ':8080/socket.io';
+  opts.path = opts.path || ':7474/socket.io';
   this.nsps = {};
   this.subs = [];
   this.opts = opts;
