@@ -1,7 +1,7 @@
 {
   "isDev": true,
   "server": {
-    "port": 7474,
+    "port": 8080,
     "/* secure */": "/* whether this connects via https */",
     "secure": true,
     "key": "cert/aodkey.pem",
