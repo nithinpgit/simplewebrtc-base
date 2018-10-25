@@ -18404,23 +18404,7 @@ function WebRTC(opts) {
             debug: false,
             // makes the entire PC config overridable
             peerConnectionConfig: {
-                        iceServers: [
-							{
-                                'urls': 'stun:stun.l.google.com:19302'
-                            }, 
-							{
-                                "urls": "turn:turn.citrixonline.com:5060",
-                                "username": "citrixturnuser",
-                                "credential": "turnpassword"
-
-                            },
-                            {
-                                "urls": "turn:turn.citrixonline.com:443?transport=tcp",
-								"username": "citrixturnuser",
-                                "credential": "turnpassword"
-
-                            }
-                        ]
+                        iceServers: [{urls:["stun:turn.goto-rtc.com:5060"],username:"citrixturnuser",credential:"turnpassword"},{urls:["turn:turn.goto-rtc.com:5060?transport=udp","turn:turn.goto-rtc.com:443?transport=tcp","turn:turn.goto-rtc.com:5060?transport=tcp"],username:"citrixturnuser",credential:"turnpassword"}]
 						//iceServers: []
                     },
                     peerConnectionConstraints: {
