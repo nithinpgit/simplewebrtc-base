@@ -12467,7 +12467,7 @@ function Manager(uri, opts){
   }
   opts = opts || {};
 
-  opts.path = opts.path || '/socket.io';
+  opts.path = opts.path || ':7474/socket.io';
   this.nsps = {};
   this.subs = [];
   this.opts = opts;
@@ -14514,7 +14514,7 @@ arguments[4][38][0].apply(exports,arguments)
 			return continuationByte & 0x3F;
 		}
 
-		// If we end up here, it’s not a continuation byte
+		// If we end up here, itï¿½s not a continuation byte
 		throw Error('Invalid continuation byte');
 	}
 
